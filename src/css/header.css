@@ -93,6 +93,22 @@ header {
             }
         }
     }
+
+    &:before {
+        left: 0;
+        content: "";
+        z-index: -1;
+        width: 100%;
+        height: 150px;
+        position: absolute;
+        transform: scaleY(0);
+        transform-origin: 0 0;
+    
+        background: linear-gradient(180deg, var(--theme-active-background) 25%, transparent 100%);
+        animation: enhance-header linear both;
+        animation-timeline: scroll(root) !important;
+        animation-range: 0 100px;
+      }
 }
 
 @keyframes fade-in {
@@ -104,6 +120,12 @@ header {
         opacity: 1;
     }
 }
+
+@keyframes enhance-header {
+    to {
+      transform: scaleY(1);
+    }
+  }
 
 /* Responsive Styles */
 @media (min-width: 481px) and (max-width: 768px) {
