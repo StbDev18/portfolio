@@ -72,33 +72,6 @@ swa deploy -O "dist\portfolio\browser" --env "Production" -R rg-stb-portafolio -
   > Uso: merge-no-edit se encarga de configurar git para que no sea obligación el mensaje que pide el editor vim, cuando se realiza un merge
 
 
-## Compilación:
-
-_Instrucciones sobre cómo compilar el proyecto. Esto puede incluir comandos para compilar el código fuente, generar paquetes de distribución, crear imágenes de contenedor, etc._
-
-### Servidor de desarrollo:
-
-Ejecuta `ng serve` para un servidor de desarrollo. Navega a `http://localhost:4200/`. La aplicación se recargará automáticamente si cambias alguno de los archivos fuente.
-
-## Uso:
-
-_Instrucciones sobre cómo utilizar el proyecto. Incluya ejemplos y capturas de pantalla si es necesario._
-
-## Despliegue:
-
-- **Installing Node**
-
-```bash
-nvm install 12.x.x && nvm use 12.x.x
-node -v
-npm -v
-```
-
-**Installing SWA-CLI**
-```bash
-npm install -g @azure/static-web-apps-cli
-```
-
 ## Características:
 
 _Lista de las principales características del proyecto._
