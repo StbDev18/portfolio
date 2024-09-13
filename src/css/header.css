@@ -15,7 +15,7 @@ header {
         font-weight: 600;
 
         &:hover {
-            color: var(--theme-active-color);
+            color: var(--theme-active-color-hover);
         }
     }
 
