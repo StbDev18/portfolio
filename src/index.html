@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+
+    <!-- Utils Styles -->
+    <link rel="stylesheet" href="./css/utils/sizing.css">
+    <link rel="stylesheet" href="./css/utils/flexbox.css">
+
+    <!-- Fonts Styles -->
+    <link rel="stylesheet" href="./assets/fonts/Icomoon/icomoon.css">
+    <link rel="stylesheet" href="./assets/fonts/Montserrat/montserrat.css">
+
+    <!-- Generic Styles -->
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/presentation.css">
+
+    <title>STBDEV</title>
+
+    <style>
+        /* Variables */
+        :root {
+            /* THEMES */
+
+            /* - Theme black - */
+            --theme-black-color: white;
+            --theme-black-background: black;
+            --theme-black-color-hover: red;
+            /* - Theme white - */
+            --theme-white-color: black;
+            --theme-white-background: white;
+            --theme-white-color-hover: blue;
+            /* - Theme dark - */
+            --theme-dark-color: white;
+            --theme-dark-background: #0a0028;
+            --theme-dark-color-hover: yellow;
+            /* - Theme light - */
+            --theme-light-color: var(--theme-primary-background);
+            --theme-light-background: #edfff8;
+            --theme-light-color-hover: green;
+            /* - Theme primary - */
+            --theme-primary-color: white;
+            --theme-primary-background: #011c00;
+            --theme-primary-color-hover: rgb(0, 255, 0);
+
+            /* Transitions*/
+            --transition-all-01-ease-in-out: all 0.1s ease-in-out;
+            --transition-all-02-ease-in-out: all 0.2s ease-in-out;
+            --transition-all-03-ease-in-out: all 0.3s ease-in-out;
+        }
+
+        main {
+            & section {
+                min-height: 100vh;
+                padding-block: 5rem;
+
+                /*Css Grid*/
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        /* #presentation {
+            padding-top: 100px;
+
+            & img {
+                width: 250px;
+                border-radius: 50%;
+            }
+
+            & .container-social-media a {
+                font-size: 12px;
+                border-radius: 30px;
+                color: var(--theme-active-color);
+                border: 1px solid var(--theme-active-color);
+
+                &:hover {
+                    color: var(--theme-active-color-hover);
+                    border: 1px solid var(--theme-active-color-hover);
+
+                    & span {
+                        transform: scale(1.1);
+                    }
+                }
+
+                & span {
+                    transition: var(--transition-all-02-ease-in-out);
+                }
+            }
+        } */
+
+        #experience {}
+
+        #skills {}
+
+        #about_me {}
+
+        #projects {}
+
+        footer {}
+    </style>
+
+    <script type="module" src="./js/index.js"></script>
+</head>
+
+<body class="black">
+
+    <header class="width-100 display-flex align-items-center justify-content-between padding-inline-5">
+        <a href="https://sebastiantobon.com">STBDEV | Portafolio Web</a>
+        <button type="button" id="btn-theme" aria-label="Cambiar Tema"></button>
+        <div class="container-themes flex-direction-column padding-block-1">
+            <button type="button" id="btn-theme-black"
+                class="display-flex align-items-center gap-1 padding-inline-2 padding-block-1">
+                <span></span>
+                Negro
+            </button>
+            <button type="button" id="btn-theme-white"
+                class="display-flex align-items-center gap-1 padding-inline-2 padding-block-1">
+                <span></span>
+                Blanco
+            </button>
+            <button type="button" id="btn-theme-dark"
+                class="display-flex align-items-center gap-1 padding-inline-2 padding-block-1">
+                <span></span>
+                Dark
+            </button>
+            <button type="button" id="btn-theme-light"
+                class="display-flex align-items-center gap-1 padding-inline-2 padding-block-1">
+                <span></span>
+                Light
+            </button>
+            <button type="button" id="btn-theme-primary"
+                class="display-flex align-items-center gap-1 padding-inline-2 padding-block-1">
+                <span></span>
+                Primary
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="presentation" class="align-items-center padding-inline-5 gap-3">
+            <img loading="lazy" src="./assets/images/foto.webp" alt="Foto StbDev">
+            <div class="container-social-media display-flex align-items-center gap-3">
+                <a class="display-flex align-items-center gap-1 padding-inline-2 padding-block-1"
+                    href="https://github.com/StbDev18" target="_blank" rel="noopener noreferrer">
+                    <em class="icon icon-free-github"></em>
+                    <span>Github</span>
+                </a>
+                <a class="display-flex align-items-center gap-1 padding-inline-2 padding-block-1"
+                    href="https://www.linkedin.com/in/sebastian-tobon-berrio" target="_blank" rel="noopener noreferrer">
+                    <em class="icon icon-free-linkedin-2"></em>
+                    <span>Linkedin</span>
+                </a>
+            </div>
+            <h1>Sebastián Tobón Berrío</h1>
+            <p class="title-profession">Ingeniero de sistemas | <span>Desarrollador de software</span></p>
+            <p class="current-work">Actualmente Desarrollador FrontEnd en la ciudad de Medellin/Colombia con <span>+5
+                    años</span> de experiencia en el área del desarrollo web.</p>
+            <div class="icon-container">
+                <a class="icon-scroll" href="#experience"></a>
+            </div>
+        </section>
+        <section id="experience">
+            Experience
+        </section>
+        <section id="skills">
+            Skills
+        </section>
+        <section id="about_me">
+            Sobre mí
+        </section>
+        <section id="projects">
+            Proyectos
+        </section>
+    </main>
+
+    <footer></footer>
+
+</body>
+
+</html>

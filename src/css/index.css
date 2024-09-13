@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 16px;
+    color: var(--theme-active-color);
+    background: var(--theme-active-background);
+    transition: var(--transition-all-03-ease-in-out);
+    font-family: 'Montserrat-Regular', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    /* SET THEMES */
+    &.black {
+        --theme-active-color: var(--theme-black-color);
+        --theme-active-background: var(--theme-black-background);
+        --theme-active-color-hover: var(--theme-black-color-hover);
+    }
+
+    &.white {
+        --theme-active-color: var(--theme-white-color);
+        --theme-active-background: var(--theme-white-background);
+        --theme-active-color-hover: var(--theme-white-color-hover);
+    }
+
+    &.dark {
+        --theme-active-color: var(--theme-dark-color);
+        --theme-active-background: var(--theme-dark-background);
+        --theme-active-color-hover: var(--theme-dark-color-hover);
+    }
+
+    &.light {
+        --theme-active-color: var(--theme-light-color);
+        --theme-active-background: var(--theme-light-background);
+        --theme-active-color-hover: var(--theme-light-color-hover);
+    }
+
+    &.primary {
+        --theme-active-color: var(--theme-primary-color);
+        --theme-active-background: var(--theme-primary-background);
+        --theme-active-color-hover: var(--theme-primary-color-hover);
+    }
+}
+
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-gray);
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--theme-active-color);
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Responsive Laptop */
+/* @media (min-width: 769px) and (max-width: 1024px) {}  */
+
+/* Responsive Tablet */
+/* @media (min-width: 481px) and (max-width: 768px) {} */
+
+/* Responsive Mobile */
+/* @media (max-width: 500px) {} */

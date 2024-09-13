@@ -1,0 +1,187 @@
+#presentation {
+    padding-top: 100px;
+    text-align: center;
+    justify-content: space-evenly;
+
+    & * {
+        max-width: 700px;
+        transition: var(--transition-all-01-ease-in-out);
+    }
+
+    & img {
+        width: 200px;
+        border-radius: 50%;
+    }
+
+    & .container-social-media a {
+        font-size: 12px;
+        border-radius: 30px;
+        color: var(--theme-active-color);
+        border: 1px solid var(--theme-active-color);
+
+        &:hover {
+            color: var(--theme-active-color-hover);
+            border: 1px solid var(--theme-active-color-hover);
+        }
+
+        & span {
+            transition: var(--transition-all-02-ease-in-out);
+        }
+    }
+
+    & h1 {
+        font-size: 55px;
+    }
+
+    & p.title-profession {
+        & span {
+            color: var(--theme-active-color-hover);
+            font-family: 'Montserrat-SemiBold', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+    }
+
+    & p.current-work {
+        font-size: 22px;
+
+        & span {
+            font-size: 25px;
+            color: var(--theme-active-color-hover);
+            font-family: 'Montserrat-Bold', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+    }
+
+    & .icon-container {
+        left: 50%;
+        bottom: 1rem;
+        position: absolute;
+        transform: translateX(-50%);
+
+        & .icon-scroll {
+            width: 20px;
+            height: 40px;
+            color: #fff;
+            display: block;
+            position: relative;
+            border-radius: 30px;
+            border: 2px solid #fff;
+
+            &::before {
+                left: 0;
+                right: 0;
+                top: 5px;
+                width: 3px;
+                content: "";
+                height: 3px;
+                margin: auto;
+                border-radius: 50%;
+                background: #fff;
+                position: absolute;
+                animation: scroll-down 2s infinite;
+            }
+
+            &::after {
+                left: 50%;
+                bottom: -20px;
+                font-size: 12px;
+                font-size: 14px;
+                position: absolute;
+                transform: translateX(-50%);
+                font-family: 'icomoon', Arial, Helvetica, sans-serif;
+            }
+
+            &:hover {
+                transform: scale(1.05);
+                border-color: var(--theme-active-color);
+
+                &::before {
+                    background: var(--theme-active-color);
+                }
+
+                &::after {
+                    color: var(--theme-active-color);
+                }
+            }
+        }
+    }
+
+}
+
+@keyframes scroll-down {
+    80% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(1rem);
+    }
+}
+
+/* Responsive Styles */
+@media (min-width: 481px) and (max-width: 768px) {
+    #presentation {
+        padding-inline: 2rem !important;
+
+        & img {
+            width: 200px;
+        }
+
+        & h1 {
+            font-size: 45px;
+        }
+
+        & p.current-work {
+            font-size: 20px;
+
+            & span {
+                font-size: 22px
+            }
+
+        }
+
+        & p.icon-container {
+            visibility: hidden;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    #presentation {
+        padding-inline: 1rem !important;
+
+        & img {
+            width: 150px;
+        }
+
+        & .container-social-media a {
+            font-size: 11px;
+            padding-inline: .5rem;
+            padding-block: .3rem;
+        }
+
+        & h1 {
+            font-size: 30px;
+        }
+
+        & p.title-profession {
+            font-size: 12px;
+        }
+
+        & p.current-work {
+            font-size: 16px;
+
+            & span {
+                font-size: 18px;
+            }
+        }
+
+        & .icon-container {
+            visibility: hidden;
+        }
+    }
+
+    #presentation p:last-child span {
+        font-size: 18px;
+
+    }
+}
