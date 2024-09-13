@@ -59,11 +59,11 @@
         & .icon-scroll {
             width: 20px;
             height: 40px;
-            color: #fff;
             display: block;
             position: relative;
             border-radius: 30px;
-            border: 2px solid #fff;
+            color: var(--theme-active-color);
+            border: 2px solid var(--theme-active-color);
 
             &::before {
                 left: 0;
@@ -74,9 +74,9 @@
                 height: 3px;
                 margin: auto;
                 border-radius: 50%;
-                background: #fff;
                 position: absolute;
                 animation: scroll-down 2s infinite;
+                background: var(--theme-active-color);
             }
 
             &::after {
@@ -118,7 +118,7 @@
 }
 
 /* Responsive Styles */
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 840px) {
     #presentation {
         padding-inline: 2rem !important;
 
