@@ -40,7 +40,7 @@ swa deploy -O "<build-or-dist-path>" --env "Production" -R <Resource-Group-Name>
 
 **Example**
 ```bash
-swa deploy -O "dist\portfolio\browser" --env "Production" -R rg-stb-portafolio -n swa-stb-portafolio --deployment-token "91fd2cc8ab14ac9c9e00689463164a8e999c14965cdecdaf9ae37832a54853075-c32ede7b-bedb-4ba1-80b4-2d2c4403c1cd00f340333"
+swa deploy -O "src" --env "Production" -R rg-stb-portafolio -n swa-stb-portafolio --deployment-token "91fd2cc8ab14ac9c9e00689463164a8e999c14965cdecdaf9ae37832a54853075-c32ede7b-bedb-4ba1-80b4-2d2c4403c1cd00f340333"
 ```
 **Deployment complete!**
 
