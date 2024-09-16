@@ -1,12 +1,8 @@
 #presentation {
+    min-height: 100vh;
     padding-top: 100px;
     text-align: center;
     justify-content: space-evenly;
-
-    & * {
-        max-width: 700px;
-        transition: var(--transition-all-01-ease-in-out);
-    }
 
     & img {
         width: 200px;

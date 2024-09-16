@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/presentation.css">
+    <link rel="stylesheet" href="./css/experience.css">
 
     <title>STBDEV</title>
 
@@ -28,24 +29,29 @@
 
             /* - Theme black - */
             --theme-black-color: white;
+            /* --theme-black-color-2: rgb(255, 126, 126); */
             --theme-black-background: black;
-            --theme-black-color-hover: red;
+            --theme-black-color-hover: #ff0000;
             /* - Theme white - */
             --theme-white-color: black;
+            /* --theme-white-color-2: rgb(126, 126, 255); */
             --theme-white-background: white;
             --theme-white-color-hover: blue;
             /* - Theme dark - */
             --theme-dark-color: white;
+            /* --theme-dark-color-2: rgb(255, 255, 129); */
             --theme-dark-background: #0a0028;
             --theme-dark-color-hover: yellow;
             /* - Theme light - */
             --theme-light-color: var(--theme-primary-background);
+            /* --theme-light-color-2: var(--theme-primary-color-2); */
             --theme-light-background: #edfff8;
             --theme-light-color-hover: green;
             /* - Theme primary - */
             --theme-primary-color: white;
+            /* --theme-primary-color-2: #80ff80; */
             --theme-primary-background: #011c00;
-            --theme-primary-color-hover: rgb(0, 255, 0);
+            --theme-primary-color-hover: #00ff00;
 
             /* Transitions*/
             --transition-all-01-ease-in-out: all 0.1s ease-in-out;
@@ -55,26 +61,43 @@
 
         main {
             & section {
-                min-height: 100vh;
+                /* min-height: 100vh; */
                 padding-block: 5rem;
 
                 /*Css Grid*/
                 display: flex;
+                align-items: center;
                 flex-direction: column;
                 justify-content: center;
-                align-items: center;
+
+                & * {
+                    max-width: 800px;
+                    transition: var(--transition-all-01-ease-in-out);
+                }
+
+                h2 {
+                    width: 100%;
+                }
             }
         }
 
-        /* #experience {}
+        #experience {
+            scroll-snap-align: start;
+        }
 
-        #skills {}
+        #skills {
+            scroll-snap-align: start;
+        }
 
-        #about_me {}
+        #about_me {
+            scroll-snap-align: start;
+        }
 
-        #projects {}
+        #projects {
+            scroll-snap-align: start;
+        }
 
-        footer {} */
+        footer {}
     </style>
 
     <script type="module" src="./js/index.js"></script>
@@ -123,6 +146,7 @@
     </header>
 
     <main>
+        <!-- Presentation -->
         <section id="presentation" class="align-items-center padding-inline-5 gap-3">
             <img loading="lazy" src="./assets/images/foto.webp" alt="Foto StbDev">
             <div class="container-social-media display-flex align-items-center gap-3">
@@ -145,15 +169,23 @@
                 <a class="icon-scroll" href="#experience"></a>
             </div>
         </section>
-        <section id="experience">
-            Experience
+        <!-- Experience -->
+        <section id="experience" class="gap-5">
+            <h2>Experiencia</h2>
+            <div class="companies display-flex align-items-center">
+                <div id="timeline" class="timeline display-flex flex-direction-column align-items-center justify-content-center gap-4"></div>
+                <div id="company" class="company padding-4"></div>
+            </div>
         </section>
+        <!-- Skills -->
         <section id="skills">
-            Skills
+            Habilidades
         </section>
+        <!-- Presentation -->
         <section id="about">
             Sobre mí
         </section>
+        <!-- Presentation -->
         <section id="projects">
             Proyectos
         </section>

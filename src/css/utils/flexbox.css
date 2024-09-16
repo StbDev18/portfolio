@@ -7,6 +7,14 @@
     display: none;
 }
 
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-nowrap {
+    flex-wrap: wrap;
+}
+
 .flex-direction-column {
     flex-direction: column;
 }
