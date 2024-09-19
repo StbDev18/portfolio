@@ -9,6 +9,7 @@
     <!-- Utils Styles -->
     <link rel="stylesheet" href="./css/utils/sizing.css">
     <link rel="stylesheet" href="./css/utils/flexbox.css">
+    <link rel="stylesheet" href="./css/utils/animations.css">
 
     <!-- Fonts Styles -->
     <link rel="stylesheet" href="./assets/fonts/Icomoon/icomoon.css">
@@ -82,8 +83,8 @@
 <body class="dark">
 
     <header class="width-100 display-flex align-items-center justify-content-between padding-inline-5">
-        <a href="https://sebastiantobon.com">STBDEV | Portafolio Web</a>
-        <nav class="display-flex align-items-center gap-3">
+        <a class="animated fadeIn" href="https://sebastiantobon.com">STBDEV | Portafolio Web</a>
+        <nav class="display-flex align-items-center gap-3 animated fadeIn">
             <div class="nav-links display-flex align-items-center gap-3">
                 <a href="#experience">Experiencia</a>
                 <a href="#skills">Habilidades</a>
@@ -109,24 +110,26 @@
     <main>
         <!-- Presentation -->
         <section id="presentation" class="align-items-center padding-inline-5 gap-3">
-            <img loading="lazy" src="./assets/images/foto.webp" alt="Foto StbDev">
+            <img loading="lazy" class="animated fadeIn" src="./assets/images/foto.webp" alt="Foto StbDev">
             <div class="container-social-media display-flex align-items-center gap-3">
-                <a class="display-flex align-items-center gap-1 padding-inline-2 padding-block-1"
+                <a class="display-flex align-items-center gap-1 padding-inline-2 padding-block-1 animated fadeInHoverBounceInUp"
                     href="https://github.com/StbDev18" target="_blank" rel="noopener noreferrer">
                     <em class="icon icon-free-github"></em>
                     <span>Github</span>
                 </a>
-                <a class="display-flex align-items-center gap-1 padding-inline-2 padding-block-1"
+                <a class="display-flex align-items-center gap-1 padding-inline-2 padding-block-1 animated fadeInHoverBounceInUp"
                     href="https://www.linkedin.com/in/sebastian-tobon-berrio" target="_blank" rel="noopener noreferrer">
                     <em class="icon icon-free-linkedin-2"></em>
                     <span>Linkedin</span>
                 </a>
             </div>
-            <h1>Sebastián Tobón Berrío</h1>
-            <p class="title-profession">Ingeniero de sistemas | <span>Desarrollador de software</span></p>
-            <p class="current-work">Actualmente Desarrollador FrontEnd en la ciudad de Medellin/Colombia con <span>+5
+            <h1 class="animated fadeIn">Sebastián Tobón Berrío</h1>
+            <p class="title-profession animated fadeIn">Ingeniero de sistemas | <span>Desarrollador de software</span>
+            </p>
+            <p class="current-work animated fadeIn">Actualmente Desarrollador FrontEnd en la ciudad de Medellin/Colombia
+                con <span>+5
                     años</span> de experiencia en el área del desarrollo web.</p>
-            <div class="icon-container">
+            <div class="icon-container animated fadeIn">
                 <a class="icon-scroll" href="#experience"></a>
             </div>
         </section>
@@ -134,7 +137,7 @@
         <section id="experience" class="padding-inline-5 gap-5">
             <h2>Experiencia</h2>
             <ul class="cards-companies display-flex flex-direction-column gap-3">
-                <li class="card-experience">
+                <li class="card-experience animated animation__view animation__range-10-35 fadeInLeft">
                     <span>2021 – actualmente</span>
                     <h1>Desarrollador frontend semi senior</h1>
                     <div class="company">
@@ -152,7 +155,7 @@
                         <img src="./assets/svgs/icons-tech/angular.svg" [alt]="'Icono ' + tech">
                     </div>
                 </li>
-                <li class="card-experience">
+                <li class="card-experience animated animation__view animation__range-10-35 fadeInUp">
                     <span>2021</span>
                     <h1>Desarrollador mobile</h1>
                     <div class="company">
@@ -170,7 +173,7 @@
                         <img src="./assets/svgs/icons-tech/react-native.svg" alt="Icono React Native">
                     </div>
                 </li>
-                <li class="card-experience">
+                <li class="card-experience animated animation__view animation__range-10-35 fadeInRight">
                     <span>2020-2021</span>
                     <h1>Desarrollador web</h1>
                     <div class="company">
@@ -188,7 +191,7 @@
                         <img src="./assets/svgs/icons-tech/csharp.svg" alt="Icono Csharp">
                     </div>
                 </li>
-                <li class="card-experience">
+                <li class="card-experience animated animation__view animation__range-10-35 fadeInUp">
                     <span>2019 - 2020</span>
                     <h1>Analista desarrollador fullstack</h1>
                     <div class="company">
