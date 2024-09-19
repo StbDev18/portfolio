@@ -9,13 +9,6 @@
             transition: border-color .3s ease;
             border: 1px solid var(--theme-active-color);
 
-            /* Animations */
-            animation-name: reveal-slide-in-left;
-            animation-timing-function: linear;
-            animation-fill-mode: both;
-            animation-timeline: view();
-            animation-range: entry 5% cover 30%;
-
             gap: 1rem;
             display: flex;
             flex-direction: column;
@@ -53,20 +46,5 @@
                 }
             }
         }
-    }
-}
-
-@keyframes reveal-slide-in-left {
-    0% {
-        opacity: 0;
-        transform: translateY(150px);
-    }
-
-    80% {
-        opacity: .5;
-    }
-
-    100% {
-        opacity: 1;
     }
 }
