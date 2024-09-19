@@ -26,37 +26,14 @@
         /* Variables */
         :root {
             /* THEMES */
-
-            /* - Theme black - */
-            --theme-black-color: white;
-            /* --theme-black-color-2: rgb(255, 126, 126); */
-            --theme-black-background: black;
-            --theme-black-color-hover: #ff0000;
-            /* - Theme white - */
-            --theme-white-color: black;
-            /* --theme-white-color-2: rgb(126, 126, 255); */
-            --theme-white-background: white;
-            --theme-white-color-hover: blue;
             /* - Theme dark - */
             --theme-dark-color: white;
-            /* --theme-dark-color-2: rgb(255, 255, 129); */
-            --theme-dark-background: #0a0028;
-            --theme-dark-color-hover: yellow;
+            --theme-dark-background: black;
+            --theme-dark-color-hover: gray;
             /* - Theme light - */
-            --theme-light-color: var(--theme-primary-background);
-            /* --theme-light-color-2: var(--theme-primary-color-2); */
-            --theme-light-background: #edfff8;
-            --theme-light-color-hover: green;
-            /* - Theme primary - */
-            --theme-primary-color: white;
-            /* --theme-primary-color-2: #80ff80; */
-            --theme-primary-background: #011c00;
-            --theme-primary-color-hover: #00ff00;
-
-            /* Transitions*/
-            --transition-all-01-ease-in-out: all 0.1s ease-in-out;
-            --transition-all-02-ease-in-out: all 0.2s ease-in-out;
-            --transition-all-03-ease-in-out: all 0.3s ease-in-out;
+            --theme-light-color: black;
+            --theme-light-background: white;
+            --theme-light-color-hover: gray;
         }
 
         main {
@@ -72,7 +49,6 @@
 
                 & * {
                     max-width: 800px;
-                    transition: var(--transition-all-01-ease-in-out);
                 }
 
                 h2 {
@@ -103,7 +79,7 @@
     <script type="module" src="./js/index.js"></script>
 </head>
 
-<body class="black">
+<body class="dark">
 
     <header class="width-100 display-flex align-items-center justify-content-between padding-inline-5">
         <a href="https://sebastiantobon.com">STBDEV | Portafolio Web</a>
@@ -116,16 +92,6 @@
             </div>
             <button type="button" id="btn-theme" aria-label="Cambiar Tema"></button>
             <div class="container-themes flex-direction-column padding-block-1">
-                <button type="button" id="btn-theme-black"
-                    class="display-flex align-items-center gap-1 padding-inline-2 padding-block-1">
-                    <span></span>
-                    Negro
-                </button>
-                <button type="button" id="btn-theme-white"
-                    class="display-flex align-items-center gap-1 padding-inline-2 padding-block-1">
-                    <span></span>
-                    Blanco
-                </button>
                 <button type="button" id="btn-theme-dark"
                     class="display-flex align-items-center gap-1 padding-inline-2 padding-block-1">
                     <span></span>
@@ -135,11 +101,6 @@
                     class="display-flex align-items-center gap-1 padding-inline-2 padding-block-1">
                     <span></span>
                     Light
-                </button>
-                <button type="button" id="btn-theme-primary"
-                    class="display-flex align-items-center gap-1 padding-inline-2 padding-block-1">
-                    <span></span>
-                    Primary
                 </button>
             </div>
         </nav>
@@ -170,19 +131,91 @@
             </div>
         </section>
         <!-- Experience -->
-        <section id="experience" class="gap-5">
+        <section id="experience" class="padding-inline-5 gap-5">
             <h2>Experiencia</h2>
-            <div class="companies display-flex align-items-center">
-                <div id="timeline" class="timeline display-flex flex-direction-column align-items-center justify-content-center gap-4"></div>
-                <div id="company" class="company padding-4"></div>
-            </div>
+            <ul class="cards-companies display-flex flex-direction-column gap-3">
+                <li class="card-experience">
+                    <span>2021 – actualmente</span>
+                    <h1>Desarrollador frontend semi senior</h1>
+                    <div class="company">
+                        <p><strong>Sinapsis Innovation:</strong> Desarrollo de herramientas y servicios tecnológicos.
+                        </p>
+                    </div>
+                    <div class="responsabilities">
+                        <h4>Responsabilidades</h4>
+                        <p>Desarrollo frontend con Angular, desarrollo de REST API con NodeJS y administración de base
+                            de datos con MongoDB.</p>
+                    </div>
+                    <div class="stack-tech display-flex flex-wrap align-items-center gap-2">
+                        <img src="./assets/svgs/icons-tech/html.svg" [alt]="'Icono ' + tech">
+                        <img src="./assets/svgs/icons-tech/css.svg" [alt]="'Icono ' + tech">
+                        <img src="./assets/svgs/icons-tech/angular.svg" [alt]="'Icono ' + tech">
+                    </div>
+                </li>
+                <li class="card-experience">
+                    <span>2021</span>
+                    <h1>Desarrollador mobile</h1>
+                    <div class="company">
+                        <p><strong>Ingenieria apropiada:</strong> Dedicada a brindar servicios y herramientas
+                            tecnológicas para el control negocios.</p>
+                    </div>
+                    <div class="responsabilities">
+                        <h4>Responsabilidades</h4>
+                        <p>Desarrollo de aplicación móvil con consumo de servicios expuestos por el CRM (Vtiger) para la
+                            administración de negocios.</p>
+                    </div>
+                    <div class="stack-tech display-flex flex-wrap align-items-center gap-2">
+                        <img src="./assets/svgs/icons-tech/html.svg" alt="Icono HTML">
+                        <img src="./assets/svgs/icons-tech/css.svg" alt="Icono CSS">
+                        <img src="./assets/svgs/icons-tech/react-native.svg" alt="Icono React Native">
+                    </div>
+                </li>
+                <li class="card-experience">
+                    <span>2020-2021</span>
+                    <h1>Desarrollador web</h1>
+                    <div class="company">
+                        <p><strong>Q10 Soluciones:</strong> Proveedores de Software académico, administrativo y de
+                            educación virtual para instituciones de educación en Colombia.</p>
+                    </div>
+                    <div class="responsabilities">
+                        <h4>Responsabilidades</h4>
+                        <p>Soporte y apoyo en el desarrollo de la aplicación proveedora del servicio para instituciones
+                            académicas.</p>
+                    </div>
+                    <div class="stack-tech display-flex flex-wrap align-items-center gap-2">
+                        <img src="./assets/svgs/icons-tech/html.svg" alt="Icono HTML">
+                        <img src="./assets/svgs/icons-tech/css.svg" alt="Icono CSS">
+                        <img src="./assets/svgs/icons-tech/csharp.svg" alt="Icono Csharp">
+                    </div>
+                </li>
+                <li class="card-experience">
+                    <span>2019 - 2020</span>
+                    <h1>Analista desarrollador fullstack</h1>
+                    <div class="company">
+                        <p><strong>Corprevenir:</strong> Empresa dedicada a la elaboración de planes de riesgos
+                            laborales.</p>
+                    </div>
+                    <div class="responsabilities">
+                        <h4>Responsabilidades</h4>
+                        <p>Desarrollo de aplicacion web con el stack MEAN. Frontend con Angular, REST API con NodeJS y
+                            administración de base de datos MongoDB.</p>
+                    </div>
+                    <div class="stack-tech display-flex flex-wrap align-items-center gap-2">
+                        <img src="./assets/svgs/icons-tech/html.svg" alt="Icono HTML">
+                        <img src="./assets/svgs/icons-tech/css.svg" alt="Icono CSS">
+                        <img src="./assets/svgs/icons-tech/angular.svg" alt="Icono Angular">
+                        <img src="./assets/svgs/icons-tech/node.svg" alt="Icono NodeJS">
+                        <img src="./assets/svgs/icons-tech/mongodb.svg" alt="Icono MongoDB">
+                    </div>
+                </li>
+            </ul>
         </section>
         <!-- Skills -->
         <section id="skills">
             Habilidades
         </section>
         <!-- Presentation -->
-        <section id="about">
+        <section id="about" class="display-flex flex-direction-column gap-5">
             Sobre mí
         </section>
         <!-- Presentation -->

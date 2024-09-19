@@ -1,14 +1,11 @@
 header {
     top: 0;
     left: 50%;
+    z-index: 1;
     height: 100px;
     position: fixed;
     transform: translateX(-50%);
-    background: linear-gradient(180deg, var(--color-white) 0%, rgba(255, 255, 255, 0) 100%);
-
-    * {
-        transition: var(--transition-all-03-ease-in-out);
-    }
+    background: linear-gradient(180deg, var(--theme-active-background) 0%, rgba(255, 255, 255, 0) 100%);
 
     nav {
         position: relative;

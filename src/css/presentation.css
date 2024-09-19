@@ -5,8 +5,9 @@
     justify-content: space-evenly;
 
     & img {
-        width: 200px;
+        width: 250px;
         border-radius: 50%;
+        border: 2px solid var(--theme-active-color-hover);
     }
 
     & .container-social-media a {
@@ -21,7 +22,6 @@
         }
 
         & span {
-            transition: var(--transition-all-02-ease-in-out);
         }
     }
 
