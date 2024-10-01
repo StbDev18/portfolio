@@ -35,7 +35,7 @@
 
 @media (max-width: 500px) {
     #experience {
-        padding-inline: 1rem;
+        padding-inline: 2rem;
 
         .cards-companies {
             .card-experience {

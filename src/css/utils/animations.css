@@ -20,6 +20,18 @@
     animation-fill-mode: both;
 }
 
+.animated__duration-1-05s {
+    animation-duration: 1.5s;
+}
+
+.animated__duration-2s {
+    animation-duration: 2s;
+}
+
+.animated_fill_mode_forwards {
+    animation-fill-mode: forwards;
+}
+
 .animation__infinite {
     animation-iteration-count: infinite;
 }
@@ -60,7 +72,7 @@
     }
 }
 
-@keyframes fadeInLeft {
+/* @keyframes fadeInLeft {
     0% {
         opacity: 0;
     }
@@ -90,7 +102,7 @@
         opacity: 1;
         transform: translateX(0);
     }
-}
+} */
 
 /* SLIDES */
 /* @keyframes slideInLeft {
@@ -174,6 +186,22 @@
     }
 }
 
+/* PULSE */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: 0.5;
+    }
+    50% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
 /* Classes */
 .fadeIn {
     animation-name: fadeIn;
@@ -201,4 +229,8 @@
     &:hover {
         animation-name: bounceInUpHover;
     }
+}
+
+.pulse {
+    animation-name: pulse;
 }
